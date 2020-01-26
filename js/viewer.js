@@ -3,7 +3,7 @@ var goFwd = 1;
 
 var p = {
     "type": "equirectangular",
-    "panorama": "img/1.jpg",
+    "panorama": `img/${goFwd}.jpg`,
     "autoLoad": true,
     "haov": 360,
     "vaov": 70,
@@ -17,6 +17,21 @@ var p = {
     "yaw": -169.5,
 };
 
+
+var chngL = function() {
+    document.getElementById('left').style.color = 'turquoise';
+}
+var chngLB = function() {
+    document.getElementById('left').style.color = 'black';
+}
+var chngD = function() {
+    document.getElementById('right').style.color = 'turquoise';
+}
+var chngDB = function() {
+    document.getElementById('right').style.color = 'black';
+}
+
+
 function provera() {
 
     var left = document.getElementById('left');
@@ -27,8 +42,14 @@ function provera() {
         left.style.color = 'black';
         left.disabled = false;
 
+        left.addEventListener("mouseover", chngL);
+        left.addEventListener("mouseleave", chngLB)
+
         right.style.color = 'black';
         right.disabled = false;
+
+        right.addEventListener("mouseover", chngD);
+        right.addEventListener("mouseleave", chngDB)
 
     } else {
 
