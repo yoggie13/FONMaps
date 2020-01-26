@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.4/build/pannellum.css" />
+    <script src="https://kit.fontawesome.com/b29c49e560.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.4/build/pannellum.js"></script>
+    <title>FONMaps</title>
+</head>
+
+<body>
+
+    <div class="prva">
+        <div id="panorama"></div>
+    </div>
+
+    <div class="druga">
+        <div class="arrow"><button id="left" type="button" onclick="left()" disabled><i class="far fa-arrow-alt-circle-left fa-5x"></i></button></div>
+        <div class="arrow"> <button id="up" type="button" onclick="move()"><i class="far fa-arrow-alt-circle-up fa-5x"></i> </button></div>
+        <div class="arrow"><button id="down" type="button" onclick="direction()"><i class="far fa-arrow-alt-circle-down fa-5x"></i></buttonid="down"></div>
+        <div class="arrow"><button  id="right"type="button" onclick="right()" disabled><i class="far fa-arrow-alt-circle-right fa-5x"></i></button></div>
+
+    </div>
+
+
+    <script type="text/javascript" src="js/viewer.js"></script>
+</body>
+
+</html>
