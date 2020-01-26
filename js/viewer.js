@@ -1,4 +1,3 @@
-//ubaciti sta ako se rotira
 var goFwd = 1;
 
 var p = {
@@ -17,6 +16,11 @@ var p = {
     "yaw": -169.5,
 };
 
+window.addEventListener('resize', function changeVaov() {
+    p.vaov = p.vaov + (width - window.innerWidth) * 0.04;
+    width = window.innerWidth;
+    pannellum.viewer('panorama', p);
+});
 
 var chngL = function() {
     document.getElementById('left').style.color = 'turquoise';
